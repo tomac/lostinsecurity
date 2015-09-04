@@ -42,6 +42,7 @@ server {
     add_header Content-Security-Policy "default-src 'self'; style-src 'self' 'unsafe-inline' ";
     add_header X-Content-Type-Options: "nosniff";
     add_header X-XSS-Protection "1; mode=block";
+    add_header Public-Key-Pins "pin-sha256='d+Nzzj/kBbW36XgzHd3iQz7lzmMFM7UedINRmVf+ie4='; pin-sha256='U7ZybtJ2wCBeg7QSvWZppKSa06gOYkSCIZkaR2ft3DM='; pin-sha256='JNFyeZHEFDpGO41RvpVRuQY1Oi19xtLFeF99j0EYduE='; max-age=10; includeSubDomains";
 
     access_log  /var/log/nginx/lostinsecurity.access.log combined;
     error_log  /var/log/nginx/lostinsecurity.error.log info;
