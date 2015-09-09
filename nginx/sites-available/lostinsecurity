@@ -11,7 +11,7 @@ server {
 }
 
 server {
-    listen 443 ssl;
+    listen 443 ssl spdy;
 
     server_name  www.lostinsecurity.com;
 
